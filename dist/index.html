@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卷皮主页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../script/common.js"></script>
+    <script src="../script/ajax.js"></script>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/main.js"></script>
+</head>
+<body>
+        <!-- 广告**************************************************************************** -->
+    <div class="AD_bg">
+                <div id="AD">
+                    <a href="http://localhost:8080/huodong.html"><img src="../img/ad1.jpg"/></a>
+                    <button class="close">×</button>
+                </div>
+            </div>
+        
+        <div class="bao_one">
+                <div class="header_two">
+                         <ul>
+                            <li id="go"><a href="http://localhost:8080/denglu.html">登录</a></li>
+                            <li><a href="http://localhost:8080/zhuce.html">免费注册</a></li><li>|</li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">商家入驻</a></li><li>|</li>
+ <!-- 购物车还未添加================================================================= -->
+                             <!-- <li class="header_two_gou"><img src="../img/bao.png"/><a href="#">购物车</a></li><li>|</li> -->
+ <!-- 购物车还未添加========================================================================= -->
+                             <li><a href="#">商家中心</a></li>
+                             <li class="header_two_one"><a href="#">客户服务</a>
+                                       <ol class="header_two_two">
+                                           <li><a href="#">帮助中心</a></li>
+                                           <li><a href="#">联系客服</a></li>
+                                       </ol>
+                            </li>
+                         </ul>
+                </div>
+        </div>
+ <!-- ==============主页导航栏===================== -->
+ <div class="wai_one">
+        <div class="header_one">
+                <div class="header_one_top">
+                       <img src="../img/jianpi_03.gif"/>
+                       <div class="header_one_top_left">
+                                <p>&nbsp;用&nbsp;户&nbsp;中&nbsp;心</p>
+                                <p>JUANPI.COM</p>
+                       </div>
+<!-- 后期加入百度搜索效果===================================================== -->
+                       <div class="header_one_top_input">
+                            <input type="text" placeholder="请输入您要搜索的商品">
+                            <img src="../img/sou.png"/>
+                     </div>
+<!-- 后期加入百度搜索效果====================================================== -->
+                       <ul class="header_one_top_right">
+                              <li><img src="../img/biao.jpg"/><span>10:00开枪</span></li><li>|</li>
+                              <li><img src="../img/shandian.jpg"/><span>买手砍价</span></li><li>|</li>
+                              <li><img src="../img/fangdajing.jpg"/><span>验货质检</span></li>
+                       </ul>
+                       
+                </div>
+        </div>
+    </div>
+<!--================搜索框一行================ -->
+<div class="bao_two">  
+       <div class="banner">
+               <div id="btn_list">
+                    <ul >
+                            <li class="btn_list">首页</li>
+                            <li>品牌折扣</li>
+                            <li>9.9包邮</li>
+                            <li>即将上线</li>
+                            <li><img src="../img/shou.png"/>手机版</li>
+                    </ul>
+                    <!-- <div class="client">
+                        <img src="../img/kehuduan.png"/>
+                     </div> 客户端二维码-->
+                <!-- =====================客户端二维码=============== -->
+                </div>
+                 <div class="wai_two"> <p></p></div> 
+                <div id="item_list">
+                    <ul >
+                            <li >
+                                    <ol class="item_left">
+                                            <li><span><img src="../img/nvzhuang.jpg"/><a href="http://localhost:8080/shoplist.html">女装</a></span>|<span><img src="../img/nanzhuang.jpg"/><a href="http://localhost:8080/shoplist.html">男装</a></span></li>
+                                            <li><span><img src="../img/xiezi.jpg"/><a href="http://localhost:8080/shoplist.html">鞋子</a></span>|<span><img src="../img/xiangbao.jpg"/><a href="http://localhost:8080/shoplist.html">箱包</a></span></li>
+                                            <li><span><img src="../img/muying.jpg"/><a href="http://localhost:8080/shoplist.html">母婴</a></span>|<span><img src="../img/meizhaung.jpg"/><a href="http://localhost:8080/shoplist.html">美妆</a></span></li>
+                                            <li><span><img src="../img/jujia.jpg"/><a href="http://localhost:8080/shoplist.html">居家</a></span>|<span><img src="../img/jiafang.jpg"/><a href="http://localhost:8080/shoplist.html">家纺</a></span></li>
+                                            <li><span><img src="../img/wenti.jpg"/><a href="http://localhost:8080/shoplist.html">文体</a></span>|<span><img src="../img/meishi.jpg"/><a href="http://localhost:8080/shoplist.html">美食</a></span></li>
+                                            <li><span><img src="../img/shuma.jpg"/><a href="http://localhost:8080/shoplist.html">数码</a></span>|<span><img src="../img/dianqi.jpg"/><a href="http://localhost:8080/shoplist.html">电器</a></span></li>
+                                            <li><span><img src="../img/neiyi.jpg"/><a href="http://localhost:8080/shoplist.html">内衣</a></span>|<span><img src="../img/peishi.jpg"/><a href="http://localhost:8080/shoplist.html">配饰</a></span></li>
+                                    </ol>
+                                        <div id="item_center_box">
+                                                        <button id="left">&lt;</button>
+                                                        <button id="right">&gt;</button>
+                                                        <ul id="item_center_box_list">
+                                                                <li ><a href="http://localhost:8080/shoplist.html"><img src="../img/lun1.jpg"/></a></li>
+                                                                <li ><a href="http://localhost:8080/shoplist.html"></a><img src="../img/lun2.jpg"/></a></li>
+                                                                <li ><a href="http://localhost:8080/shoplist.html"></a><img src="../img/lun1.jpg"/></a></li>
+                                                        </ul>
+                                                        <div id="item_center_box_btn">
+                                                                <button></button>
+                                                                <button></button>
+                                                        </div>
+                                        </div>
+                                        <div class="item_right">
+                                                  <div class="item_right_top">
+                                                          <a href="http://localhost:8080/shoplist.html"><img src="../img/r-5 (2).jpg" /></a>
+                                                          <a href="http://localhost:8080/shoplist.html"><img src="../img/r-5 (3).jpg" /></a>
+                                                          <a href="http://localhost:8080/shoplist.html"><img src="../img/r-5 (4).jpg" /></a>
+                                                          <a href="http://localhost:8080/shoplist.html"><img src="../img/r-5 (5).jpg" /></a>
+                                                  </div>
+                                                  <div class="item_right_bottom">
+                                                          <a href="http://localhost:8080/shoplist.html"><img src="../img/r-5 (1).jpg"/></a>
+                                                  </div>
+                                        </div>
+                            </li>
+                          <!-- 选项卡第一页 ======================-->
+                            <li >
+                                    <div class="item_two">
+                                            <div class="item_two_top">
+                                                        <ul>
+                                                                <li><img src="../img/er_1 (1).png"></li>
+                                                                <li>
+                                                                        <p>ALDOLA/雅黛丽内衣10.10专场</p>
+                                                                        <p>满99元减50元，上不封顶</p>
+                                                                </li>
+                                                        </ul> 
+                                                        <ol>
+                                                                <li class="item_two_top_dao">
+                                                                                <span>剩余</span>
+                                                                                <span id="hour_one">00</span>
+                                                                                <span>小时</span>
+                                                                                <span id="minute_one">00</span>
+                                                                                <span>分钟</span>
+                                                                                <span id="second_one">00</span>  
+                                                                                <span>秒</span>     
+                                                                </li>
+                                                                <li><a href="#">进入专场&gt;&gt;</a></li>
+                                                        </ol>
+                                            </div>
+                                            <div class="item_two_bottom">
+                                                    <div class="item_two_bottom_one pic">
+                                                            <a href="http://localhost:8080/shoplist.html"><img src="../img/er_1 (2).jpg"/></a>
+                                                            <p class="item_two_bottom_one_p"><span>￥119</span><span>￥289</span></p>
+                                                            <p><span>雅黛丽舒适软钢圈文胸</span><span>剩7天</span></p>
+                                                    </div>     
+                                                    <div class="item_two_bottom_one">
+                                                               <a href="http://localhost:8080/shoplist.html"><img src="../img/er_1 (3).jpg"/></a> 
+                                                                <p class="item_two_bottom_one_p"><span>￥59</span><span>￥399</span></p>
+                                                                <p><span>雅黛丽薄款无钢圈文胸</span><span>剩7天</span></p>
+                                                        </div>    
+                                                        <div class="item_two_bottom_one">
+                                                               <a href="http://localhost:8080/shoplist.html"><img src="../img/er_1 (4).jpg"/></a> 
+                                                                <p class="item_two_bottom_one_p"><span>￥119</span><span>￥289</span></p>
+                                                                <p><span>雅黛丽软绵大码薄文胸</span><span>剩7天</span></p>
+                                                        </div>    
+                                                        <div class="item_two_bottom_one">
+                                                               <a href="http://localhost:8080/shoplist.html"><img src="../img/er_1 (5).jpg"/></a> 
+                                                                <p class="item_two_bottom_one_p"><span>￥129</span><span>￥389</span></p>
+                                                                <p><span>雅黛丽光面蕾丝文胸</span><span>剩7天</span></p>
+                                                        </div>    
+                                                        <div class="item_two_bottom_one">
+                                                               <a href="http://localhost:8080/shoplist.html"><img src="../img/er_1 (1).jpg"/></a> 
+                                                                <p class="item_two_bottom_one_p"><span>￥119</span><span>￥369</span></p>
+                                                                <p><span>雅黛丽深V调整型文胸</span><span>剩7天</span></p>
+                                                        </div>    
+                                             </div>
+                                    </div>
+                            </li>
+                            <!-- 选项卡第②页 ======================-->
+                            <li class="item_three">
+                                        <div class="item_two_bottom">
+                                                        <div class="item_two_bottom_one pic nav">
+                                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/three_03.jpg"/></a>
+                                                                <p class="item_two_bottom_one_p"><span>￥8.9</span><span>￥59</span></p>
+                                                                <p><span>美白牙膏</span><span>上新</span></p>
+                                                        </div>     
+                                                        <div class="item_two_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"><img src="../img/three_05.jpg"/></a> 
+                                                                    <p class="item_two_bottom_one_p"><span>￥12</span><span>￥59</span></p>
+                                                                    <p><span>补水睡眠面膜(2瓶)</span><span>上新</span></p>
+                                                            </div>    
+                                                            <div class="item_two_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"><img src="../img/three_07.gif"/></a> 
+                                                                    <p class="item_two_bottom_one_p"><span>￥15.8</span><span>￥59</span></p>
+                                                                    <p><span>复古黑水晶流苏耳钉</span><span>上新</span></p>
+                                                            </div>    
+                                                            <div class="item_two_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"><img src="../img/three_09.jpg"/></a> 
+                                                                    <p class="item_two_bottom_one_p"><span>￥19.9</span><span>￥59</span></p>
+                                                                    <p><span>护龈舒敏3支360g牙膏</span><span>上新</span></p>
+                                                            </div>    
+                                                            <div class="item_two_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"><img src="../img/three_11.jpg"/></a> 
+                                                                    <p class="item_two_bottom_one_p"><span>￥12.9</span><span>￥19.9</span></p>
+                                                                    <p><span>以足养颜排浊清毒</span><span>上新</span></p>
+                                                            </div>    
+                                                 </div>
+                            </li>
+                            <!-- 选项卡第三页 ======================-->
+                            <li  class="item_four">
+                                        <div class="item_four_bottom">
+                                                        <div class="item_four_bottom_one pic nav">
+                                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/four_03.jpg"/></a>
+                                                                <p class="item_four_bottom_one_p"><span>￥268</span><span class="shan">￥798</span><s>10月18日</s></p>
+                                                                <p><span>客厅卧室LED灯具</span><span>新品上新</span></p>
+                                                        </div>     
+                                                        <div class="item_four_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"><img src="../img/four_05.jpg"/></a> 
+                                                                    <p class="item_four_bottom_one_p"><span>￥138</span><span class="shan">￥198</span><s>10月18日</s></p>
+                                                                    <p><span>居家个性时尚餐厅吊灯</span><span>新品上新</span></p>
+                                                            </div>    
+                                                            <div class="item_four_bottom_one nav">
+                                                                  <a href="http://localhost:8080/shoplist.html"> <img src="../img/four_07.jpg"/></a> 
+                                                                    <p class="item_four_bottom_one_p"><span>￥138</span><span class="shan">￥228</span><s>10月18日</s></p>
+                                                                    <p><span>温馨卧室房间餐厅灯</span><span>新品上新</span></p>
+                                                            </div>    
+                                                            <div class="item_four_bottom_one nav">
+                                                                   <a href="http://localhost:8080/shoplist.html"> <img src="../img/four_09.jpg"/></a>
+                                                                    <p class="item_four_bottom_one_p"><span>￥14</span><span class="shan">￥30</span><s>10月18日</s></p>
+                                                                    <p><span>吉祥喜庆结婚地毯门垫</span><span>新品上新</span></p>
+                                                            </div>    
+                                                            <div class="item_four_bottom_one nav">
+                                                                  <a href="http://localhost:8080/shoplist.html"> <img src="../img/four_11.jpg"/></a> 
+                                                                    <p class="item_four_bottom_one_p"><span>￥14</span><span class="shan">￥300</span><s>10月18日</s></p>
+                                                                    <p><span>现代卧室床边客厅地毯</span><span>新品上新</span></p>
+                                                            </div>    
+                                                 </div>
+                            </li>
+                            <!-- 选项卡第④页 ======================-->
+                            <li class="item_five"><img src="../img/erweima_03.jpg"></li>
+                            <!-- 选项卡第五页 ======================-->
+                    </ul>
+                </div>
+      </div>
+</div> 
+<!--=============== 选项卡加轮播图=================== -->
+<div class="bao_three"><!-- 自适应 -->
+        <div class="box_wai">
+                <div class="box"><!-- 内容区 -->
+                        <div class="box_today">
+                                     <span><h2>今日品牌</h2><s>TODAY'S  BRAND</s></span>
+                                     <span>全部品牌&gt;&gt;</span>
+                        </div>
+                        <div class="box_pic">
+                                <div class="box_pic_RJ RJ_right">
+                                             <a href="http://localhost:8080/shoplist.html"><img src="../img/box2.jpg" /></a>
+                                             <p><span  class="box_pic_day">每满199减100</span>
+                                                <span class="box_pic_go">进入活动</span></p>
+                                </div>
+                                <div class="box_pic_RJ RJ_right">
+                                        <a href="http://localhost:8080/shoplist.html"><img src="../img/box3.jpg" /></a>
+                                        <p><span  class="box_pic_day">0.5折起</span>
+                                                <span class="box_pic_go">进入活动</span></p>
+                                </div>
+                                <div class="box_pic_RJ RJ_right">
+                                        <a href="http://localhost:8080/shoplist.html"><img src="../img/box4.jpg" /></a>
+                                        <p><span  class="box_pic_day">2折起</span>
+                                                <span class="box_pic_go">进入活动</span></p>
+                                </div>
+                                <div class="box_pic_RJ">
+                                        <a href="http://localhost:8080/shoplist.html"><img src="../img/box5.jpg" /></a>
+                                        <p><span  class="box_pic_day">全场两件5折</span>
+                                                <span class="box_pic_go">进入活动</span></p>
+                                </div>
+                        </div>
+                        <div class="box_more">
+                                <span>更多品牌特卖：</span>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (1).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (2).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (3).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (4).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (5).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (6).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (7).png" /></a>
+                                <a href = "http://localhost:8080/shoplist.html"><img src="../img/box1 (8).png" /></a>
+                                <s>查看全部&gt;&gt;</s>
+                        </div>
+                </div><!-- 内容区 -->
+        </div>
+</div><!-- 自适应 -->
+<!-- ======================今日品牌================ -->
+     <div class="background"></div>
+     <div class="banner_big">
+             <img src="../img/banner_all.jpg" />
+     </div>
+     <div class="background"></div>
+        <div class="bao_four">
+                <div class="monopoly" style=" background: white">
+                        <div class="item_two">
+                                <div class="item_two_top">
+                                        <ul>
+                                                <li><img src="../img/mono (1).png"></li>
+                                                <li>
+                                                        <p>ccain  oliver女装冬季上新专场</p>
+                                                        <p>1.4折起</p>
+                                                </li>
+                                        </ul> 
+                                        <ol>
+                                                <li class="item_two_top_dao">
+                                                                <span>剩余</span>
+                                                                <span id="hour_three">00</span>
+                                                                <span>小时</span>
+                                                                <span id="minute_three">00</span>
+                                                                <span>分钟</span>
+                                                                <span id="second_three">00</span>  
+                                                                <span>秒</span>     
+                                                </li>
+                                                <li><a href="#">进入专场&gt;&gt;</a></li>
+                                        </ol>
+                                </div>
+                                <div class="item_two_bottom">
+                                        <div class="item_two_bottom_one pic">
+                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/mono (2).jpg"/></a>
+                                                <p class="item_two_bottom_one_p"><span>￥189</span><span>￥820</span></p>
+                                                <p><span>韩版修身显瘦棉衣女</span><span>剩7天</span></p>
+                                        </div>     
+                                        <div class="item_two_bottom_one">
+                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/mono (1).jpg"/></a>
+                                                <p class="item_two_bottom_one_p"><span>￥135</span><span>￥580</span></p>
+                                                <p><span>短款韩版丝绒棉马甲女</span><span>剩7天</span></p>
+                                        </div>    
+                                        <div class="item_two_bottom_one">
+                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/mono (3).jpg"/></a>
+                                                <p class="item_two_bottom_one_p"><span>￥199</span><span>￥850</span></p>
+                                                <p><span>新版时尚长款保暖棉衣</span><span>剩7天</span></p>
+                                        </div>    
+                                        <div class="item_two_bottom_one">
+                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/mono (5).jpg"/></a>
+                                                <p class="item_two_bottom_one_p"><span>￥226</span><span>￥900</span></p>
+                                                <p><span>宽松加厚棉衣女马甲</span><span>剩7天</span></p>
+                                        </div>    
+                                        <div class="item_two_bottom_one">
+                                                <a href="http://localhost:8080/shoplist.html"><img src="../img/mono (4).jpg"/></a>
+                                                <p class="item_two_bottom_one_p"><span>￥225</span><span>￥980</span></p>
+                                                <p><span>韩版棉衣女中长款外套</span><span>剩7天</span></p>
+                                        </div>    
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="background"></div>
+        <div class="bao_four">
+                        <div class="monopoly" style=" background: white;">
+                                <div class="item_two">
+                                        <div class="item_two_top">
+                                                <ul>
+                                                        <li><img src="../img/poly (1).png"></li>
+                                                        <li>
+                                                                <p>丽黛娇人女装上新专场</p>
+                                                                <p>0.1折起</p>
+                                                        </li>
+                                                </ul> 
+                                                <ol>
+                                                        <li class="item_two_top_dao">
+                                                                        <span>剩余</span>
+                                                                        <span id="hour_two">00</span>
+                                                                        <span>小时</span>
+                                                                        <span id="minute_two">00</span>
+                                                                        <span>分钟</span>
+                                                                        <span id="second_two">00</span>  
+                                                                        <span>秒</span>     
+                                                        </li>
+                                                        <li><a href="#">进入专场&gt;&gt;</a></li>
+                                                </ol>
+                                        </div>
+                                        <div class="item_two_bottom">
+                                                <div class="item_two_bottom_one pic">
+                                                       <a href="http://localhost:8080/shoplist.html"><img src="../img/poly (1).jpg"/></a> 
+                                                        <p class="item_two_bottom_one_p"><span>￥98</span><span>￥398</span></p>
+                                                        <p><span>秋上新时尚二件套装女</span><span>剩7天</span></p>
+                                                </div>     
+                                                <div class="item_two_bottom_one">
+                                                       <a href="http://localhost:8080/shoplist.html"><img src="../img/poly (3).jpg"/></a> 
+                                                        <p class="item_two_bottom_one_p"><span>￥98</span><span>￥698</span></p>
+                                                        <p><span>秋上新蕾丝钩花连衣裙</span><span>剩7天</span></p>
+                                                </div>    
+                                                <div class="item_two_bottom_one">
+                                                       <a href="http://localhost:8080/shoplist.html"><img src="../img/poly (4).jpg"/></a> 
+                                                        <p class="item_two_bottom_one_p"><span>￥79</span><span>￥398</span></p>
+                                                        <p><span>秋上新喇叭牛仔裤女</span><span>剩7天</span></p>
+                                                </div>    
+                                                <div class="item_two_bottom_one">
+                                                       <a href="http://localhost:8080/shoplist.html"> <img src="../img/poly (5).jpg"/></a>
+                                                        <p class="item_two_bottom_one_p"><span>￥98</span><span>￥398</span></p>
+                                                        <p><span>秋上新时尚两件套装女</span><span>剩7天</span></p>
+                                                </div>    
+                                                <div class="item_two_bottom_one">
+                                                       <a href="http://localhost:8080/shoplist.html"><img src="../img/poly (2).jpg"/></a> 
+                                                        <p class="item_two_bottom_one_p"><span>￥69</span><span>￥398</span></p>
+                                                        <p><span>夏上新开衫雪纺外套女</span><span>剩7天</span></p>
+                                                </div>    
+                                        </div>
+                                </div>
+                        </div>
+         </div>
+<!-- ======================瀑布流之上的两屏 ===========-->
+<div class="background"></div>
+<div class="bao_five">
+        <div class="flow">
+                        <div class="box_today">
+                                        <span class="flow_box"><h2>今日新品</h2><s>TODAY'S  NEW</s></span>
+                                        <span id="flow_header">每天10点上新</span>
+                           </div>
+                         <ul class="flow_ul">
+                                 
+                                <!-- <li>
+                                    <dl>
+                                        <dt ><img src="${list[i].goods.imageUrl}" ></dt>
+                                        <dd>
+                                        <span class="falls_main_span">
+                                        <p class="falls_main_p">
+                                                <span>￥${list[i].goods.actualCurrentPrice}</span>
+                                                <span>?</span>
+                                                <span>0</span>
+                                                </p>
+                                                </span>
+                                                <p>${list[i].goods.introduce}</p>
+                                                
+                                        </dd>
+                                        </dl>
+                                </li> -->
+                         </ul>
+        </div>
+</div>
+<!--= js渲染================== -->
+<script>
+function WaterFull(){};
+    WaterFull.prototype.init = function(){
+        this.ul = document.querySelector(".flow_ul");
+        this.page_num = 0;
+        this.rendering = false;
+        this.loadJson()
+        .then(function(data){
+             console.log(this.json)
+             console.log(data)
+            this.renderPage();
+        }.bind(this));
+        this.handleEvent();
+    }
+    WaterFull.prototype.handleEvent = function(){
+        onscroll = this.ifRender.bind(this);
+    }
+    WaterFull.prototype.ifRender = function(){
+        var children = this.ul.children;
+        if(this.rendering){return 0;}
+        if(children.length == 0){
+                return 0;
+        }
+        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        var clientHeight = document.documentElement.clientHeight;
+        var lastChildren = children[children.length-1];
+        var lastTop = lastChildren.offsetTop;
+        
+        if(clientHeight + scrollTop > lastTop){
+                this.rendering = true;
+                this.page_num ++ ;
+                this.renderPage();
+        }
+    }
+    WaterFull.prototype.loadJson = function(){
+        return new Promise(function(success){
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET","data.json");
+            xhr.send(null);
+            xhr.onload = function(){
+                if(xhr.status){
+                    this.json = JSON.parse(xhr.response);
+                    success(xhr.response);
+                }
+            }.bind(this);
+        }.bind(this));
+    }
+    WaterFull.prototype.renderPage = function(){
+        var html = "";
+        var list = this.json.body.goodsList;
+        for(var i = this.page_num *3 ; i <= this.page_num * 3 + 2; i++){
+            html += `<li>
+                        <dl>
+                            <dt class="flow_ul_img"><a href="http://localhost:8080/shoplist.html"><img src="${list[i].goods.imageUrl}" ></a></dt>
+                            <dd>
+                                <span class="falls_main_span">
+                                <p class="falls_main_p">
+                                    <span>￥${list[i].goods.actualCurrentPrice}</span>
+                                    <span>￥${list[i].goods.marketPrice}</span>
+                                    </p>
+                                    </span>
+                                    <p class="falls_node">${list[i].goods.introduce}</p>
+                                </dd>
+                            </dl>
+                        </li>`;
+        }
+        this.ul.innerHTML += html;
+        this.rendering = false;
+    }
+    var waterFull = new WaterFull();
+    waterFull.init();
+</script>
+<!-- =====================瀑布流======================= -->
+<div class="mount">
+      <div class="mount_top">
+               <span><a href="#">今日上新</a>|</span>
+                <ol>
+                        <li><a href="http://localhost:8080/shoplist.html">女装</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">男装</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">鞋子</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">箱包</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">母婴</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">美妆</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">居家</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">家纺</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">文体</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">美食</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">数码</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">电器</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">内衣</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">配饰</a></li>
+                </ol>         
+                <s>[即将上线]</s>
+        </div>
+</div>
+<!-- =====================吸顶菜单 ==================-->
+<div class="back">
+             <div class="back_head">
+                     <img src="../img/zuo_tou.png" />
+                     <div class="back_head_show">
+                                <img src="../img/show.jpg"/>
+<!-- 登录链接===================================================================== -->
+                                <span>快来<a href="denglu.html">登录</a>吧！么么哒</span>
+                     </div>
+             </div>   
+             <div class="back_buy">
+                     <img src="../img/zuo_gou.png"/>
+                     <p>购</p>
+                     <p>物</p>
+                     <p>袋</p>  
+             </div>
+             <div class="back_collect">
+                     <img src="../img/zuo_xin.png" />
+                     <div class="back_collect_show">
+                             <p>我的收藏</p>
+                     </div>
+             </div>
+             <div class="back_quan">
+                        <img src="../img/zuo_quan.png" />
+                        <div class="back_quan_show">
+                                <p>我的优惠券</p>
+                        </div>
+             </div>
+            <div class="back_yijian">
+                        <img src="../img/zuo_yijian.png" />
+                        <div class="back_yijian_show">
+                                <p>意见反馈</p>
+                        </div>
+            </div>
+            <div class="back_Code">
+                        <img src="../img/zuo_ma.png" />
+                        <div class="back_Code_show">
+                                <img src="../img/erweima_03.jpg">
+                                <p>随时逛，及时抢</p>
+                        </div>
+           </div>
+           <div class="back_top">
+                <img src="../img/zuo_huiding.png" />
+                <div class="back_top_show">
+                        <p>回到顶部</p>
+                </div>
+           </div>
+</div>
+<!-- ===============左侧购物车加回到顶部================ -->
+
+        <div class="footer">
+                        <p></p>
+                        <div class="footer_big">
+                        <!-- 上 -->
+                        <div class="foot_top">
+                                <div class="footer_big_left">
+                                <s>随时逛，及时抢</s>
+                                </div>
+                                <!-- 可重复 -->
+                                <div class="footer_big_center">
+                                <h2>获取更新</h2>
+                                <ul>
+                                        <li><a href = "http://localhost:8080/shoplist.html">iPhone/Android</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">卷皮QQ空间</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">卷皮新浪微博</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">开放API</a></li>
+                                </ul>
+                                </div>
+                                <div class="footer_big_center">
+                                        <h2>商务合作</h2>
+                                        <ul>
+                                        <li><a href = "http://localhost:8080/shoplist.html">卖家免费报名</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">商家入驻</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">廉政邮箱</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">开放平台</a></li>
+                                        </ul>
+                                </div>
+                                <div class="footer_big_center">
+                                        <h2>公司信息</h2>
+                                        <ul>
+                                        <li><a href = "http://localhost:8080/shoplist.html">关于卷皮</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">媒体报道</a></li>
+                                        </ul>
+                                </div>
+                                <div class="footer_big_center">
+                                        <h2>帮助中心</h2>
+                                        <ul>
+                                        <li><a href = "http://localhost:8080/shoplist.html">新手上路</a></li>
+                                        <li><a href = "http://localhost:8080/shoplist.html">网站地图</a></li>
+                                        </ul>
+                                </div>
+                                <!-- 可重复 -->
+                                <div class="footer_big_right">
+                                <s>周一至周日</s>
+                                <u>9:00-18:00</u>
+                                </div>
+                                <!-- 上 -->               
+                        </div>    
+                        <!-- 中 -->
+                        <div class="footer_center">
+                                <div class="foot_center_left">
+                                        <s>友情链接  :</s>
+                                </div>
+                                <div class="foot_center_center">
+                                        <a href="http://localhost:8080/shoplist.html">九块邮</a>
+                                        <a href="http://localhost:8080/shoplist.html">易登网</a>
+                                        <a href="http://localhost:8080/shoplist.html">普洱茶</a>
+                                        <a href="http://localhost:8080/shoplist.html">中国鲜花礼品网</a>
+                                        <a href="http://localhost:8080/shoplist.html">品牌鞋</a>
+                                </div>
+                                <div class="foot_right">
+                                        <span>更多&lt;&lt;</span>
+                                </div> 
+                        </div>
+                        <!-- 中 --> 
+                        <!-- 下       -->
+                        <div class="footer_bottom">
+                        <p>武汉奇米网科技有限公司鄂ICP备10209250号 | ICP许可证号 ： 鄂B2-20150109 | 鄂公网安备42018502000390号 | 食品流通许可证 SP4201991510041888</p>
+                        <p>Copyright © 2010 -2018 JuanPi.com All Rights Reserved</p>
+                        <ul>
+                                <li><img src="../img/r_315new.gif" /></li>
+                                <li><img src="../img/r_cnnic.gif" /></li>
+                                <li><img src="../img/r_gongshang.gif" /></li>
+                                <li><img src="../img/sm_124x47.png" /></li>    
+                        </ul>
+                        </div>
+                        <!-- 下       -->
+                        </div>
+        </div>
+
+</body>
+</html>

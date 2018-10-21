@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+form, fieldset, legend, button, input, textarea,
+th, td {
+  margin: 0;
+  padding: 0; }
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+/* 将斜体扶正 */
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace; }
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px; }
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+a, s, u {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  font-family: "微软雅黑"; }
+
+a:hover {
+  text-decoration: none; }
+
+ul, ol, dl {
+  list-style: none; }
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+
+img {
+  border: none; }
+
+.activity_bg {
+  background: #191919; }
+  .activity_bg .activity {
+    width: 1200px;
+    margin: 0 auto; }
+    .activity_bg .activity img {
+      display: block;
+      margin: 0 auto; }

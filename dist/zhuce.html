@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_header.css">
+    <script src="../script/ajax.js"></script>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/jquery.validate.js"></script>
+    <!-- <script src="../script/cookie.js"></script> -->
+
+    <style>
+          .wai_three{
+         width:100%;
+         background: #f6f6f6;
+         padding-top:20px;
+     }
+        .entry{
+            width:1190px;
+            margin:0 auto;
+            background: white;
+            height:455px;
+        }
+        .entry_top{
+            width:1190px;
+            height:68px;
+            border-bottom:2px solid #f6f6f6;
+        }
+ .entry_top_left{
+       float: left;
+       margin-left:80px;
+       margin-top:25px;
+       width:285px;
+       height:24px;
+ }
+ .entry_top_left>li{
+       float: left;
+       height:24px;
+ }
+ .entry_top_left>li:first-child{
+     color:tomato;
+     font-size: 14px;
+     margin-right: 5px;
+ }
+ .entry_top_left>li:last-child{
+     margin-left: 5px;
+     color:#666666;
+     line-height: 24px;
+ }
+ .entry_top_right{
+     float: right;
+     width:165px;
+     height:18px;
+     margin:25px 20px 0 0 ;
+ }
+ .entry_top_right>li{
+     float:left;
+     font-size: 14px;
+ }
+ .entry_top_right>li>a{
+    font-size: 14px;
+    color:#0289cd;
+    margin-left:5px;
+ }
+ .entry_top_right>li:first-child{
+    color:#999999;
+ }
+ .entry_bottom{
+    height:383px;
+    width:1190px;
+    overflow: hidden;
+ }
+ /* ============注册部分========= */
+ #register_left{
+     height:383px;
+     width:530px;
+     float: left;
+     margin-left:167px;
+ }
+
+.register_right{
+    height:383px;
+    width:300px;
+    float: left;
+    margin-left: 40px;
+}
+.register_right>img{
+    width:298px;
+    height:300px;
+    margin-top:20px;
+}
+.register_right>p{
+    width:298px;
+    height:5px;
+    border-bottom:4px double #999;
+}
+.entry_bottom_left_three_left>p{
+        height: 16px;
+        margin-bottom: 5px;
+        color:#666;
+ }
+
+ .entry_bottom_left_three_left>img{
+     margin-right: 3px;
+     width: 22px;
+     height:22px;     
+ }
+ .register_left_name{
+    margin-top:20px;
+ }
+ .register_left_name,.register_left_pwd,.register_left_Rpwd,.register_left_yanzheng{
+    height:60px;
+    width:383px;
+    font-size:16px;
+ }
+ #uesrname,#password,#Rpwd{
+     width:264px;
+     height:35px;
+     outline: none;
+ }
+
+ .register_left_yanzheng>span{
+     margin-left: 17px;
+     font-size:16px;
+ }
+ #yan{
+     width:130px;
+     height:35px;
+     margin-right: 20px;
+     outline: none;
+ }
+ #zheng>a{
+    width:96px;
+     height:35px;
+     line-height: 35px;
+     text-align: center;
+     font-size: 14px;
+     background: #999;
+     border: none;
+     outline: none;
+     display: inline-block;
+ }
+ .register_left_lone{
+     width:530px;
+     height:60px;
+ }
+ .register_left_li{
+     display:inline-block;
+     width:400px;
+     height:60px;
+     background: tomato;
+    border-radius: 4px;
+    outline: none;
+ }
+ .register_left_li>a{
+     color:white;
+     font-size:20px;
+     line-height: 60px;
+    text-align: center;
+ }
+ .register_left_reader{
+    width:530px;
+     height:60px;
+     line-height: 60px;
+     padding-left:30px;
+ }
+/* ============注册部分========= */
+  /* 版权===============   */
+ .entry_finally{
+     height:90px;
+     width:1190px;
+     margin:0 auto;
+ }
+ .entry_finally>p{
+    margin-top:40px;
+  text-align: center;
+  color:#666;
+  font-size:14px;
+ }
+ #register_left label.error{
+     color: red;
+     font-size: 10px;
+     margin-left:80px;
+ }
+ .register_left_li{
+     font-size: 20px;
+     color:white;
+ }
+ </style>
+</head>
+<body>
+        <!-- 头 -->
+    <div class="wai_one">
+            <div class="header_one">
+                    <div class="header_one_top">
+                           <img src="../img/jianpi_03.gif"/>
+                           <div class="header_one_top_left">
+                                    <p>&nbsp;用&nbsp;户&nbsp;中&nbsp;心</p>
+                                    <p>JUANPI.COM</p>
+                           </div>
+                           <ul class="header_one_top_right">
+                                  <li><img src="../img/biao.jpg"/><span>10:00开枪</span></li><li>|</li>
+                                  <li><img src="../img/shandian.jpg"/><span>买手砍价</span></li><li>|</li>
+                                  <li><img src="../img/fangdajing.jpg"/><span>验货质检</span></li>
+                           </ul>
+                    </div>
+                <div class="wai_two"> <p></p></div> 
+            </div>
+     </div>
+    <!-- 头 -->
+     <!-- 下边 -->
+     <div class="wai_three">
+            <div class="entry">
+                  <div class="entry_top">
+                         <ul class="entry_top_left">
+                             <li>新用户注册</li>
+                             <li><img src="../img/xiegang.jpg"/></li>
+                             <li>注册卷皮网，赢积分换好礼！</li>
+                         </ul>
+                         <ul class="entry_top_right">
+                               <li>已有账号，</li>
+                               <li><a href ="denglu.html">立即登录</a></li>
+                         </ul>
+                  </div>
+                  <!-- ====================注册===================== -->
+                  <div class="entry_bottom">
+                           <form id="register_left" action="http://localhost:8080/jump.html">
+                                 <div class="register_left_name">
+                                      <span>邮箱号码：</span><input type="text" id="uesrname" placeholder="请输入邮箱号码" email=true  required=true value="1415208313@qq.com"/>
+                                 </div>
+                                 <div class="register_left_pwd">
+                                    <span>创建密码：</span><input type="text" id="password" placeholder="6-16位密码"   maxlength=16 minlength=6 required=true value="123456"/>
+                                 </div>
+                                 <div class="register_left_Rpwd">
+                                    <span>确认密码：</span><input type="text" id="Rpwd" placeholder="请再次输入密码" equalTo="#password" required=true value="123456"/>    
+                                 </div>
+                                 <div class="register_left_yanzheng">
+                                    <span>验证码：</span><input type="text" id="yan" placeholder="请输入手机验证码" ignore="#yan"/><span id="zheng"><a href="#">获取短信验证</a></span> 
+                                 </div>
+                                 <div class="register_left_lone">
+                                    <button class="register_left_li">立即注册</button>
+                                  </div>
+                                 <div class="register_left_reader">
+                                       <input type="checkbox" checked><span>我已阅读并接受《卷皮用户协议》</span>
+                                 </div>
+                             </form>
+                              <!-- =注册链接================================================================================================== -->
+                             
+<!-- =注册链接================================================================================================== -->
+                           <div class="register_right">
+                                  <img src="../img/zuce.png"/>
+                                  <p></p>
+                                  <div class="entry_bottom_left_three_left">
+                                        <p>无需注册，快捷登陆</p>
+                                        <img src="../img/weixin.jpg"/>
+                                        <img src="../img/weibo.jpg" />
+                                        <img src="../img/taobao.jpg" />
+                              </div>
+                           </div>
+                  </div>
+                   <!-- ====================注册===================== -->
+            </div>
+            <div class="entry_finally">
+                    <p>武汉奇米网科技有限公司鄂ICP备10209250号 | ICP许可证号 ： 鄂B2-20150109 | 鄂公网安备42018502000390号 | 食品流通许可证 SP4201991510041888</p>
+                    <p>Copyright © 2010 -2018 JuanPi.com All Rights Reserved</p>           
+            </div>
+        </div>
+         <!-- 下边 -->
+        <div id="box"></div>
+</body>
+</html>
+<script>
+    $.extend($.validator.messages, {
+            required: "这是必填字段",
+            remote: "请修正此字段",
+            email: "请输入有效的电子邮件地址",
+            url: "请输入有效的网址",
+            date: "请输入有效的日期",
+            dateISO: "请输入有效的日期 (YYYY-MM-DD)",
+            number: "请输入有效的数字",
+            digits: "只能输入数字",
+            creditcard: "请输入有效的信用卡号码",
+            equalTo: "你的输入不相同",
+            extension: "请输入有效的后缀",
+            maxlength: $.validator.format("最多可以输入 {0} 个字符"),
+            minlength: $.validator.format("最少要输入 {0} 个字符"),
+            rangelength: $.validator.format(""),
+            range: $.validator.format("请输入范围在 {0} 到 {1} 之间的数值"),
+            max: $.validator.format("请输入不大于 {0} 的数值"),
+            min: $.validator.format("请输入不小于 {0} 的数值"),
+            // errorPlacement: function(error, element) {  
+            //       error.appendTo(element.parent());  
+            // } 
+        });      
+        $("#register_left").validate();
+        var oName = $("#uesrname")[0].value;
+        var pwd = $("#password")[0].value;
+        
+        $(".register_left_li").click(function(){
+           setCookie("username",oName)
+           setCookie("password",pwd)
+        //    location.href="http://localhost:8080/jump.html"
+        })
+        
+</script>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卷皮详情页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common_header.css">
+    <link rel="stylesheet" href="../css/detaile.css">
+    <script src="../script/ajax.js"></script>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/move.js"></script>
+    <script src="../script/common.js"></script>
+    <script src="../script/detaile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../script/jquery.cookie.js"></script>
+</head>
+<body>
+ <!--================================= 导航栏 ================================-->
+ <div class="bao_one">
+    <div class="header_two">
+             <ul>
+                <li><a href="http://localhost:8080/denglu.html">登录</a></li>
+                <li><a href="http://localhost:8080/zhuce.html">免费注册</a></li><li>|</li>
+                <li><a href="http://localhost:8080/shoplist.html">我的订单</a></li>
+                <li><a href="http://localhost:8080/shoplist.html">商家入驻</a></li><li>|</li>
+<!-- 购物车还未添加=============================================== -->
+                 <!-- <li class="header_two_gou"><img src="../img/bao.png"/><a href="#">购物车</a></li><li>|</li> -->
+<!-- 购物车还未添加============================================================ -->
+                 <li><a href="http://localhost:8080/shoplist.html">商家中心</a></li>
+                 <li class="header_two_one"><a href="shoplist.html">客户服务</a>
+                    <ol class="header_two_two">
+                        <li><a href="http://localhost:8080/shoplist.html">帮助中心</a></li>
+                        <li><a href="http://localhost:8080/shoplist.html">联系客服</a></li>
+                    </ol>
+                </li>
+             </ul>
+    </div>
+</div>
+<!--================================= 导航栏 ================================-->
+
+<!--===================================搜索框一行===================================== -->
+<div class="wai_one">
+<div class="header_one">
+        <div class="header_one_top">
+               <img src="../img/jianpi_03.gif"/>
+               <div class="header_one_top_left">
+                        <p>&nbsp;用&nbsp;户&nbsp;中&nbsp;心</p>
+                        <p>JUANPI.COM</p>
+               </div>
+       <!-- 后期加入百度搜索效果================================= -->
+               <div class="header_one_top_input">
+                    <input type="text" placeholder="请输入您要搜索的商品">
+                    <img src="../img/sou.png"/>
+             </div>
+      <!-- 后期加入百度搜索效果================================== -->
+               <ul class="header_one_top_right">
+                      <li><img src="../img/biao.jpg"/><span>10:00开枪</span></li><li>|</li>
+                      <li><img src="../img/shandian.jpg"/><span>买手砍价</span></li><li>|</li>
+                      <li><img src="../img/fangdajing.jpg"/><span>验货质检</span></li>
+               </ul>                   
+        </div>
+</div>
+</div>
+<!--===================================搜索框一行===================================== -->
+
+<!-- ============================================导航栏2 ====================================-->
+<div class="nav">
+    <ul class="nav_ul">
+        <li ><a href="http://localhost:8080/index.html">首页</a></li>
+        <li><a href="http://localhost:8080/shoplist.html">品牌折扣</a></li>
+        <li><a href="http://localhost:8080/shoplist.html">9.9包邮</a></li>
+        <li><a href="http://localhost:8080/shoplist.html">即将上线</a></li>
+        <li><img src="../img/shou.png"/><a href="#">手机版</a></li>
+    </ul>
+</div>
+<span class="cut"></span>
+<!-- ============================================导航栏2 ====================================-->
+
+<!-- ===========================================放大镜表头 ===================================-->
+<div class="page">
+    <span><a href="http://localhost:8080/index.html">首页</a></span>&gt;<span id="name_title">黑糖麦芽饼干+200g</span>
+</div>
+<!-- ===========================================放大镜表头 ===================================-->
+
+<!--============================================ 放大镜===================================== -->
+<div class="magnifier">
+     <div id="small">  <!--原始框-->
+        <div id="mo">	
+		</div>
+         <img src="../img/timg.jpg" id="small_img"/>
+         <div id="frame"><!--放大镜-->
+         </div>
+         <div id="big"><!--放大框-->
+            <img src="../img/timg.jpg" id="big_img"/>
+         </div>
+     </div> 
+  
+ <!--============================================ 放大镜===================================== -->
+<!-- ==========================================详情和购物车 ==================================-->
+<div class="magnifier_container">
+    <div class="magnifier_container_title">
+        <h2>viviga倍之味黑糖麦芽饼干夹心饼干休闲零食小吃200</h2>
+    </div>
+    <div class="magnifier_container_price">
+        <span>促销价￥</span><span id="xian">10.8</span><span>原价￥</span><span id="yuan">22</span>
+    </div>
+    <div class="addres">
+        <dl class="addres_color">
+            <dt>颜色：</dt>
+            <dd>灰色</dd>
+            <dd>黑色</dd>
+            <dd>棕色</dd>
+        </dl>
+  
+    <dl class="addres_size">
+        <dt>尺码：</dt>
+        <dd>39</dd>
+        <dd>40</dd>
+        <dd>41</dd>
+        <dd>42</dd>
+        <dd>43</dd>
+    </dl>
+      <ol class="addres_num">
+          <li class="addres_num_one">数量：</li>
+           <li><button>-</button></li>
+           <li>1</li>
+           <li><button>+</button></li>
+      </ol>
+    </div>
+    <div class="magnifier_container_buy">
+        <button class="magnifier_button">加入购物车</button>
+    </div>
+</div>
+<!-- ==========================================详情和购物车 ==================================-->
+<div class="magnifier_shop">
+    <div class="magnifier_shop_name">
+        <h2>无厘头商品专营店</h2>
+        <p>共48件商品</p>
+    </div>
+    <div class="magnifier_shop_inner">
+        <ul>
+            <li><img src="../img/jinpai.png" />金牌认证</li>
+            <li><img src="../img/baozhengjin.png" />已缴纳保证金</li>
+            <li><img src="../img/yingye.png" />营业执照</li>
+        </ul>
+    </div>
+    <div class="magnifier_shop_kefu">
+        <span><img src="../img/lianxi.png"/>联系客服</span>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <p></p>
+    <div class="footer_big">
+        <!-- 上 -->
+        <div class="foot_top">
+            <div class="footer_big_left">
+                <s>随时逛，及时抢</s>
+            </div>
+            <!-- 可重复 -->
+            <div class="footer_big_center">
+                <h2>获取更新</h2>
+                <ul>
+                    <li><a href = "#">iPhone/Android</a></li>
+                    <li><a href = "#">卷皮QQ空间</a></li>
+                    <li><a href = "#">卷皮新浪微博</a></li>
+                    <li><a href = "#">开放API</a></li>
+                </ul>
+            </div>
+            <div class="footer_big_center">
+                    <h2>商务合作</h2>
+                    <ul>
+                        <li><a href = "#">卖家免费报名</a></li>
+                        <li><a href = "#">商家入驻</a></li>
+                        <li><a href = "#">廉政邮箱</a></li>
+                        <li><a href = "#">开放平台</a></li>
+                    </ul>
+            </div>
+            <div class="footer_big_center">
+                    <h2>公司信息</h2>
+                    <ul>
+                        <li><a href = "#">关于卷皮</a></li>
+                        <li><a href = "#">媒体报道</a></li>
+                    </ul>
+            </div>
+            <div class="footer_big_center">
+                    <h2>帮助中心</h2>
+                    <ul>
+                        <li><a href = "#">新手上路</a></li>
+                        <li><a href = "#">网站地图</a></li>
+                    </ul>
+            </div>
+            <!-- 可重复 -->
+            <div class="footer_big_right">
+                <s>周一至周日</s>
+                <u>9:00-18:00</u>
+            </div>
+             <!-- 上 -->               
+        </div>    
+        <!-- 中 -->
+        <div class="footer_center">
+                <div class="foot_center_left">
+                    <s>友情链接  :</s>
+                </div>
+                <div class="foot_center_center">
+                    <a href="#">九块邮</a>
+                    <a href="#">易登网</a>
+                    <a href="#">普洱茶</a>
+                    <a href="#">中国鲜花礼品网</a>
+                    <a href="#">品牌鞋</a>
+                </div>
+                <div class="foot_right">
+                     <span>更多&lt;&lt;</span>
+                </div> 
+        </div>
+     <!-- 中 --> 
+     <!-- 下       -->
+     <div class="footer_bottom">
+          <p>武汉奇米网科技有限公司鄂ICP备10209250号 | ICP许可证号 ： 鄂B2-20150109 | 鄂公网安备42018502000390号 | 食品流通许可证 SP4201991510041888</p>
+          <p>Copyright © 2010 -2018 JuanPi.com All Rights Reserved</p>
+         <ul>
+             <li><img src="../img/r_315new.gif" /></li>
+             <li><img src="../img/r_cnnic.gif" /></li>
+             <li><img src="../img/r_gongshang.gif" /></li>
+             <li><img src="../img/sm_124x47.png" /></li>    
+         </ul>
+     </div>
+     <!-- 下       -->
+    </div>
+</div>
+<!-- ===============================左侧购物车 ===============-->
+<div class="back">
+    <div class="back_head">
+            <img src="../img/zuo_tou.png" />
+            <div class="back_head_show">
+                       <img src="../img/show.jpg"/>
+                       <span>快来<a href="http://localhost:8080/denglu.html">登录</a>吧！么么哒</span>
+            </div>
+    </div>   
+    <div class="back_buy">
+            <img src="../img/zuo_gou.png"/>
+            <p>购</p>
+            <p>物</p>
+            <p>袋</p>  
+            <span class="back_buy_span">0</span>
+            <ul id="shopslist">
+                <!-- <li>
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.webp" alt="">
+                    <h3>我是标题</h3>
+                    <strong>1</strong>
+                </li>  -->
+            </ul>
+    </div>
+    <div class="back_collect">
+            <img src="../img/zuo_xin.png" />
+            <div class="back_collect_show">
+                    <p>我的收藏</p>
+            </div>
+    </div>
+    <div class="back_quan">
+               <img src="../img/zuo_quan.png" />
+               <div class="back_quan_show">
+                       <p>我的优惠券</p>
+               </div>
+    </div>
+   <div class="back_yijian">
+               <img src="../img/zuo_yijian.png" />
+               <div class="back_yijian_show">
+                       <p>意见反馈</p>
+               </div>
+   </div>
+   <div class="back_Code">
+               <img src="../img/zuo_ma.png" />
+               <div class="back_Code_show">
+                       <img src="../img/erweima_03.jpg">
+                       <p>随时逛，及时抢</p>
+               </div>
+  </div>
+  <div class="back_top">
+       <img src="../img/zuo_huiding.png" />
+       <div class="back_top_show">
+               <p>回到顶部</p>
+       </div>
+  </div>
+</div>
+<!-- ===============================左侧购物车 ===============-->
+</body>
+</html>
+<script>
+     $(function(){
+        $("#small_img").attr("src",getCookie("img"));
+        $("#big_img").attr("src",getCookie("img"));	
+        $(".magnifier_container_title").text(getCookie("title"));
+        $("#name_title").text(getCookie("title"));
+        $("#xian").text(getCookie("price"));
+        $("#yuan").text(getCookie("old_price"));	        
+        
+     })
+</script>
